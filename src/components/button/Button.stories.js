@@ -24,6 +24,11 @@ storiesOf('Button', module)
             Click Here
         </Button>
     ))
+    .add('selected', () => (
+        <Button {...actions} isSelected>
+            Click Here
+        </Button>
+    ))
     .add('radar', () => (
         <Button {...actions} showRadar>
             Click Here
