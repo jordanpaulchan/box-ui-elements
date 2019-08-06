@@ -2756,6 +2756,34 @@
     prop-types "^15.7.2"
     util-deprecate "^1.0.2"
 
+"@storybook/addon-viewport@^5.1.10":
+  version "5.1.10"
+  resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/addon-viewport/-/addon-viewport-5.1.10.tgz#b29b942d330e77d412f24f0f1d6a140bfa5a7946"
+  integrity sha1-spuULTMOd9QS8k8PHWoUC/paeUY=
+  dependencies:
+    "@storybook/addons" "5.1.10"
+    "@storybook/client-logger" "5.1.10"
+    "@storybook/components" "5.1.10"
+    "@storybook/core-events" "5.1.10"
+    "@storybook/theming" "5.1.10"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    prop-types "^15.7.2"
+    util-deprecate "^1.0.2"
+
+"@storybook/addons@5.1.10":
+  version "5.1.10"
+  resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/addons/-/addons-5.1.10.tgz#2d8d8ca20b6d9b4652744f5fc00ead483f705435"
+  integrity sha1-LY2Mogttm0ZSdE9fwA6tSD9wVDU=
+  dependencies:
+    "@storybook/api" "5.1.10"
+    "@storybook/channels" "5.1.10"
+    "@storybook/client-logger" "5.1.10"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    util-deprecate "^1.0.2"
+
 "@storybook/addons@5.1.9", "@storybook/addons@^5.1.9":
   version "5.1.9"
   resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/addons/-/addons-5.1.9.tgz#ecf218d08508b97ca5e6e0f1ed361081385bd3ff"
@@ -2766,6 +2794,29 @@
     "@storybook/client-logger" "5.1.9"
     core-js "^3.0.1"
     global "^4.3.2"
+    util-deprecate "^1.0.2"
+
+"@storybook/api@5.1.10":
+  version "5.1.10"
+  resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/api/-/api-5.1.10.tgz#5eeb5d9a7c268e5c89bd40c9a80293a7c72343b8"
+  integrity sha1-XutdmnwmjlyJvUDJqAKTp8cjQ7g=
+  dependencies:
+    "@storybook/channels" "5.1.10"
+    "@storybook/client-logger" "5.1.10"
+    "@storybook/core-events" "5.1.10"
+    "@storybook/router" "5.1.10"
+    "@storybook/theming" "5.1.10"
+    core-js "^3.0.1"
+    fast-deep-equal "^2.0.1"
+    global "^4.3.2"
+    lodash "^4.17.11"
+    memoizerific "^1.11.3"
+    prop-types "^15.6.2"
+    react "^16.8.3"
+    semver "^6.0.0"
+    shallow-equal "^1.1.0"
+    store2 "^2.7.1"
+    telejson "^2.2.1"
     util-deprecate "^1.0.2"
 
 "@storybook/api@5.1.9":
@@ -2802,6 +2853,13 @@
     global "^4.3.2"
     telejson "^2.2.1"
 
+"@storybook/channels@5.1.10":
+  version "5.1.10"
+  resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/channels/-/channels-5.1.10.tgz#04fd35c05032c675f7816ea1ca873c1a0415c6d9"
+  integrity sha1-BP01wFAyxnX3gW6hyoc8GgQVxtk=
+  dependencies:
+    core-js "^3.0.1"
+
 "@storybook/channels@5.1.9":
   version "5.1.9"
   resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/channels/-/channels-5.1.9.tgz#003cfca0b9f1ba6cf47ce68304aedd71bdb55e74"
@@ -2827,12 +2885,43 @@
     memoizerific "^1.11.3"
     qs "^6.6.0"
 
+"@storybook/client-logger@5.1.10":
+  version "5.1.10"
+  resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/client-logger/-/client-logger-5.1.10.tgz#f83a8717924dd222e0a6df82ae74701f27e0bb35"
+  integrity sha1-+DqHF5JN0iLgpt+CrnRwHyfguzU=
+  dependencies:
+    core-js "^3.0.1"
+
 "@storybook/client-logger@5.1.9":
   version "5.1.9"
   resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/client-logger/-/client-logger-5.1.9.tgz#87e2f7578416269adeccd407584010bc353f14d3"
   integrity sha1-h+L3V4QWJprezNQHWEAQvDU/FNM=
   dependencies:
     core-js "^3.0.1"
+
+"@storybook/components@5.1.10":
+  version "5.1.10"
+  resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/components/-/components-5.1.10.tgz#4b6436f0b5bb2483fb231bee263d173a9ed7d241"
+  integrity sha1-S2Q28LW7JIP7IxvuJj0XOp7X0kE=
+  dependencies:
+    "@storybook/client-logger" "5.1.10"
+    "@storybook/theming" "5.1.10"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    markdown-to-jsx "^6.9.1"
+    memoizerific "^1.11.3"
+    polished "^3.3.1"
+    popper.js "^1.14.7"
+    prop-types "^15.7.2"
+    react "^16.8.3"
+    react-dom "^16.8.3"
+    react-focus-lock "^1.18.3"
+    react-helmet-async "^1.0.2"
+    react-popper-tooltip "^2.8.3"
+    react-syntax-highlighter "^8.0.1"
+    react-textarea-autosize "^7.1.0"
+    recompose "^0.30.0"
+    simplebar-react "^1.0.0-alpha.6"
 
 "@storybook/components@5.1.9":
   version "5.1.9"
@@ -2857,6 +2946,13 @@
     react-textarea-autosize "^7.1.0"
     recompose "^0.30.0"
     simplebar-react "^1.0.0-alpha.6"
+
+"@storybook/core-events@5.1.10":
+  version "5.1.10"
+  resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/core-events/-/core-events-5.1.10.tgz#5aed88c572036b6bd6dfff28976ee96e6e175d7a"
+  integrity sha1-Wu2IxXIDa2vW3/8ol27pbm4XXXo=
+  dependencies:
+    core-js "^3.0.1"
 
 "@storybook/core-events@5.1.9":
   version "5.1.9"
@@ -2974,6 +3070,17 @@
     semver "^6.0.0"
     webpack "^4.33.0"
 
+"@storybook/router@5.1.10":
+  version "5.1.10"
+  resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/router/-/router-5.1.10.tgz#d3cffd3f1105eb665882f389746ccabbb98c3c16"
+  integrity sha1-08/9PxEF62ZYgvOJdGzKu7mMPBY=
+  dependencies:
+    "@reach/router" "^1.2.1"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    qs "^6.6.0"
+
 "@storybook/router@5.1.9":
   version "5.1.9"
   resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/router/-/router-5.1.9.tgz#8cd97bea4f2acf8ec5f6694d06fb0633dde33417"
@@ -2984,6 +3091,24 @@
     global "^4.3.2"
     memoizerific "^1.11.3"
     qs "^6.6.0"
+
+"@storybook/theming@5.1.10":
+  version "5.1.10"
+  resolved "https://box.jfrog.io/box/api/npm/boxnpm/@storybook/theming/-/theming-5.1.10.tgz#f9bd519cdf9cccf730656e3f5fd56a339dd07c9f"
+  integrity sha1-+b1RnN+czPcwZW4/X9VqM53QfJ8=
+  dependencies:
+    "@emotion/core" "^10.0.9"
+    "@emotion/styled" "^10.0.7"
+    "@storybook/client-logger" "5.1.10"
+    common-tags "^1.8.0"
+    core-js "^3.0.1"
+    deep-object-diff "^1.1.0"
+    emotion-theming "^10.0.9"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    polished "^3.3.1"
+    prop-types "^15.7.2"
+    resolve-from "^5.0.0"
 
 "@storybook/theming@5.1.9":
   version "5.1.9"
