@@ -1,0 +1,28 @@
+import { Story, Meta } from '@storybook/addon-docs/blocks';
+import Checkbox from './Checkbox.js';
+
+<Meta title='Components|Checkbox' component={Checkbox} />
+
+# Checkbox
+
+Welcome to the future of Storybook!
+
+<Story name="Basic">
+  <Checkbox
+    fieldLabel="Field Label"
+    id="1"
+    name="checkbox1"
+    label="Uncontrolled checkbox"
+    description="isChecked is undefined, which makes this an uncontrolled component. You can turn this one on-off whenever you feel like!"
+  />
+</Story>
+
+<Story name="Loading">
+  <Checkbox
+    fieldLabel="Loadign Label"
+    id="1"
+    name="checkbox1"
+    label="Loading checkbox"
+    description="isChecked is undefined, which makes this an uncontrolled component. You can turn this one on-off whenever you feel like!"
+  />
+</Story>

@@ -37,6 +37,7 @@ module.exports = {
         },
         test: {
             plugins: [
+                'require-context-hook',
                 '@babel/plugin-transform-modules-commonjs',
                 'dynamic-import-node', // https://github.com/facebook/jest/issues/5920
                 [

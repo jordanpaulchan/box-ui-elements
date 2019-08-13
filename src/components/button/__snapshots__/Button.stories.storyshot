@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button default 1`] = `<div />`;
+
+exports[`Storyshots Button disabled 1`] = `<div />`;
+
+exports[`Storyshots Button loading 1`] = `<div />`;
+
+exports[`Storyshots Button radar 1`] = `<div />`;
+
+exports[`Storyshots Button selected 1`] = `<div />`;

@@ -293,18 +293,20 @@ const editor1 = {
 
 export const editors = [editor0, editor1];
 
-storiesOf('MetaDataInstanceEditor', module).add(
-    'default',
-    () => (
-        <MetaDataInstanceEditor
-            canAdd={boolean('Can Add', true)}
-            templates={templates}
-            editors={editors}
-            {...props}
-            {...actions}
-        />
-    ),
-    {
-        notes: 'MetaDataInstanceEditor notes',
-    },
-);
+storiesOf('MetaDataInstanceEditor', module)
+    .addParameters({ component: MetaDataInstanceEditor })
+    .add(
+        'default',
+        () => (
+            <MetaDataInstanceEditor
+                canAdd={boolean('Can Add', true)}
+                templates={templates}
+                editors={editors}
+                {...props}
+                {...actions}
+            />
+        ),
+        {
+            notes: 'MetaDataInstanceEditor custom notes',
+        },
+    );
