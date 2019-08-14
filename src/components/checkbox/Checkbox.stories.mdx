@@ -1,28 +1,98 @@
-import { Story, Meta } from '@storybook/addon-docs/blocks';
+import { useState } from 'react';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import Checkbox from './Checkbox.js';
 
 <Meta title='Components|Checkbox' component={Checkbox} />
 
 # Checkbox
 
-Welcome to the future of Storybook!
+Documentation of the Checkbox compnent
 
-<Story name="Basic">
-  <Checkbox
-    fieldLabel="Field Label"
-    id="1"
-    name="checkbox1"
-    label="Uncontrolled checkbox"
-    description="isChecked is undefined, which makes this an uncontrolled component. You can turn this one on-off whenever you feel like!"
-  />
-</Story>
+## Basic
 
-<Story name="Loading">
-  <Checkbox
-    fieldLabel="Loadign Label"
-    id="1"
-    name="checkbox1"
-    label="Loading checkbox"
-    description="isChecked is undefined, which makes this an uncontrolled component. You can turn this one on-off whenever you feel like!"
-  />
-</Story>
+<Preview>
+    <Story name="Basic">
+        <Checkbox
+            fieldLabel="Field Label"
+            id="1"
+            name="checkbox1"
+            label="Uncontrolled checkbox"
+            description="isChecked is undefined, which makes this an uncontrolled component. You can turn this one on-off whenever you feel like!"
+        />
+    </Story>
+</Preview>
+
+<Props of={Checkbox} />
+
+## Controlled
+
+<Preview>
+    <Story name="Controlled">{
+        () => {
+            const [isChecked, setIsChecked] = useState(false)
+            return (
+                <div>
+                    <Checkbox
+                        name="checkbox2"
+                        label="Controlled checkbox"
+                        isChecked={isChecked}
+                        onChange={() => setIsChecked(!isChecked)}
+                        description="This is a controlled component."
+                    />
+                    <Checkbox
+                        name="checkbox3"
+                        label="Inverted Controlled checkbox"
+                        isChecked={!isChecked}
+                        onChange={() => setIsChecked(!isChecked)}
+                        description="This is a controlled component, whose value is the inverse of the one above."
+                    />
+                </div>
+            )
+        }
+    }</Story>
+</Preview>
+
+## Disabled
+
+<Preview>
+    <Story name="Disabled">
+        <Checkbox
+            name="checkbox5"
+            label="Disabled"
+            isChecked
+            isDisabled
+        />
+    </Story>
+</Preview>        
+
+## Tooltip
+
+<Preview>
+    <Story name="Tooltip">
+        <Checkbox
+            name="checkbox6"
+            label="I have a tooltip"
+            tooltip="See? Isn’t this great??"
+        />
+    </Story>
+</Preview>  
+
+## Subsection
+
+<Preview>
+    <Story name="Subsection">
+        <Checkbox
+            id="321"
+            name="checkbox321"
+            label="Checkbox with subsection"
+            subsection={ 
+                <Checkbox
+                    id="134"
+                    name="checkbox134"
+                    label="Subsection checkbox"
+                    description="Hi I'm a description"
+                />
+                }
+        />
+    </Story>
+</Preview>  

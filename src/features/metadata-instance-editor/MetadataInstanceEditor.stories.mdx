@@ -1,4 +1,3 @@
-import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { boolean } from '@storybook/addon-knobs';
@@ -17,7 +16,7 @@ export const actions = {
     onSave: action('onSave'),
 };
 
-const template0 = {
+export const template0 = {
     id: 'template0',
     templateKey: 'template0',
     displayName: 'template0 simple',
@@ -32,7 +31,7 @@ const template0 = {
     ],
 };
 
-const template1 = {
+export const template1 = {
     id: 'template1',
     templateKey: 'template1',
     displayName: 'template1 title',
@@ -250,7 +249,7 @@ const template1 = {
 
 export const templates = [template0, template1];
 
-const editor0 = {
+export const editor0 = {
     instance: {
         canEdit: true,
         id: 'editor0',
@@ -270,7 +269,7 @@ const editor0 = {
     hasError: false,
 };
 
-const editor1 = {
+export const editor1 = {
     instance: {
         canEdit: true,
         id: 'editor1',
@@ -293,20 +292,22 @@ const editor1 = {
 
 export const editors = [editor0, editor1];
 
-storiesOf('MetaDataInstanceEditor', module)
-    .addParameters({ component: MetaDataInstanceEditor })
-    .add(
-        'default',
-        () => (
-            <MetaDataInstanceEditor
-                canAdd={boolean('Can Add', true)}
-                templates={templates}
-                editors={editors}
-                {...props}
-                {...actions}
-            />
-        ),
-        {
-            notes: 'MetaDataInstanceEditor custom notes',
-        },
-    );
+<Meta title='Features|MetaDataInstanceEditor' component={MetaDataInstanceEditor} />
+
+# MetaDataInstanceEditor
+
+MetaDataInstanceEditor docs
+
+<Preview>
+    <Story name="default">
+        <MetaDataInstanceEditor
+            canAdd={boolean('Can Add', true)}
+            templates={templates}
+            editors={editors}
+            {...props}
+            {...actions}
+        />
+    </Story>
+</Preview>
+
+<Props of={Button} />

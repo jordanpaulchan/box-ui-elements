@@ -39,12 +39,11 @@ addDecorator(withKnobs);
 addDecorator(withA11y);
 addDecorator(withIntl);
 
-// automatically import all files ending in *.stories.js
-// const req = require.context('../src', true, /\.stories\.js$/);
-// const req = requireContext('../src', true, /\.stories\.js$/);
-// function loadStories() {
-//     req.keys().forEach(filename => req(filename));
-// }
+addParameters({
+    options: {
+        sortStoriesByKind: true,
+    },
+});
 
-// wherever your story files are located
-configure(require.context('../src', true, /\.stories\.(js|ts|tsx|mdx)$/), module);
+// automatically import all files with *.stories
+configure(require.context('../src', true, /\.stories\.(mdx)$/), module);

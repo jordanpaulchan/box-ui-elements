@@ -1,16 +1,43 @@
-import Button from './Button';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import Button from './Button';
 
-<Meta title='MDX|Button' component={Button} />
+<Meta title='Components|Button' component={Button} />
 
 # Button
+```
+import Button from 'box-ui-elements/es/components/button/Button';
+```
 
 Button docs
 
 <Preview>
-    <Story name="default">
+    <Story name="Basic">
         <Button>Hello button!</Button>
     </Story>
 </Preview>
 
 <Props of={Button} />
+
+## Loading
+
+<Preview>
+    <Story name="Loading">
+        <Button isLoading>Hello button!</Button>
+    </Story>
+</Preview>
+
+## Disabled
+
+<Preview>
+    <Story name="isDisabled">
+        <Button isDisabled>Hello button!</Button>
+    </Story>
+</Preview>
+
+## With Radar
+
+<Preview>
+    <Story name="With Radar">
+        <Button showRadar>Hello button!</Button>
+    </Story>
+</Preview>

@@ -77,9 +77,7 @@ class Button extends React.Component<Props> {
                 type={type}
                 {...buttonProps}
             >
-                <span className="btn-content" style={{ padding: '5em' }}>
-                    {children}
-                </span>
+                <span className="btn-content">{children}</span>
                 {isLoading && <LoadingIndicator className="btn-loading-indicator" />}
             </button>
         );
